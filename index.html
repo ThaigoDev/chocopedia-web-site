@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocopedia - Alta Confeitaria para Eventos Especiais</title>
+    <meta name="description" content="Descubra nossas coleções de doces finos, brigadeiros gourmet e criações artesanais. Peça um orçamento para seu evento.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Chocopedia</a>
+            <nav class="navbar">
+                <a href="#collections">Coleções</a>
+                <a href="#testimonials">Depoimentos</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Arte em Forma de Doce</h1>
+                <p>Criações de alta confeitaria que transformam seu evento em uma experiência memorável.</p>
+                <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+            </div>
+        </section>
+
+        <section id="collections">
+            <div class="container">
+                <h2>Nossas Coleções</h2>
+                <div class="collection-grid">
+                    <div class="collection-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1571115274385-d6b23a789a31?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Brigadeiros Gourmet">
+                        </div>
+                        <div class="card-content">
+                            <h3>Brigadeiros Gourmet</h3>
+                            <p>Uma releitura sofisticada do clássico brasileiro, com ingredientes nobres e sabores inesquecíveis.</p>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1621939512592-aef0a4805c68?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Doces Finos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Doces Finos</h3>
+                            <p>Joias comestíveis. Camafeus, trufas e verrines que combinam estética e alta gastronomia.</p>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <div class="card-image">
+                             <img src="https://images.unsplash.com/photo-1559554316-3934b6a4855a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Clássicos de Festa">
+                        </div>
+                        <div class="card-content">
+                            <h3>Clássicos de Festa</h3>
+                            <p>O sabor da celebração em doces tradicionais executados com perfeição e carinho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>A Experiência de Nossos Clientes</h2>
+                 <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <blockquote>
+                        Contratamos a Chocopedia para nosso casamento e foi a melhor decisão. Os doces não eram apenas lindos, eram divinos! Recebemos elogios de todos os convidados. Profissionalismo e sabor impecáveis.
+                    </blockquote>
+                    <cite>— Mariana & Lucas</cite>
+                 </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Solicite um Orçamento</h2>
+                <p>Estamos prontos para adoçar seu próximo evento. Preencha o formulário e entraremos em contato em breve.</p>
+                <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Seu nome completo" required>
+                    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <input type="tel" name="phone" placeholder="Seu telefone com DDD" required>
+                    <textarea name="message" rows="7" placeholder="Olá! Gostaria de um orçamento para meu evento (tipo, data, número de convidados e doces de interesse)." required></textarea>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá!%20Vim%20pelo%20site%20da%20CHOCOPEDIA%20e%20gostaria%20de%20fazer%20um%20orçamento." class="whatsapp-float" target="_blank" aria-label="Fale Conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <footer class="footer">
+        <div class="container">
+            <h3>Chocopedia</h3>
+            <p>Criando doces memórias desde 2020.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Chocopedia. Alta confeitaria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
