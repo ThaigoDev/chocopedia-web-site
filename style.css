@@ -191,7 +191,118 @@ section {
     color: var(--color-text-darker);
     margin-top: 15px;
 }
+/* --- NOVA SEÇÃO DE CARDÁPIO --- */
+#pricing {
+    background-color: var(--color-surface);
+    text-align: center;
+}
 
+.pricing-rules {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 30px;
+    border: 1px solid #3c3026;
+    border-radius: 8px;
+    background-color: var(--color-background);
+}
+
+.price-item {
+    flex-basis: 50%;
+}
+
+.price-item h3 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.price-item .price {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.price-item .details {
+    color: var(--color-text-darker);
+    font-size: 1rem;
+}
+
+.flavor-menu {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.flavor-menu h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+/* Linha decorativa abaixo do título de sabores */
+.flavor-menu h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-primary);
+    opacity: 0.5;
+}
+
+.flavor-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    /* Cria colunas responsivas para os sabores */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px 40px; /* Espaçamento vertical e horizontal */
+    text-align: left;
+}
+
+.flavor-list li {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    padding: 10px 0;
+    border-bottom: 1px dashed #3c3026;
+    position: relative;
+    padding-left: 20px;
+}
+/* Círculo decorativo antes de cada sabor */
+.flavor-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+/* --- RESPONSIVIDADE PARA O CARDÁPIO --- */
+@media (max-width: 600px) {
+    .pricing-rules {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .flavor-list {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        text-align: center;
+    }
+    
+    .flavor-list li {
+       justify-content: center;
+    }
+
+    .flavor-list li::before {
+        display: none; /* Esconde o círculo em telas pequenas para um look mais limpo */
+    }
+}
 /* --- DEPOIMENTOS --- */
 #testimonials {
     text-align: center;
