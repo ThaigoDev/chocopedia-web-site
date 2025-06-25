@@ -120,7 +120,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1618693719365-17defa214197?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1800);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(bg.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
